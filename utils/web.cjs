@@ -105,8 +105,8 @@ const trigger = function(endpoint, username, passcode, teamName,
             finalbody = JSON.stringify(jsonObject)
         });
         res.on('end', () => {
-            console.log('Execution of TestSuite ', testSuiteName,' is in Progress...');
             if(executionTriggered){
+            console.log('Execution of TestSuite ', testSuiteName,' is in Progress...');
             checkExecStatus(execStatus,finalbody,testSuiteName,
                 finalResult,status,statusResponse,
                 scriptResultStatus,emailId,
